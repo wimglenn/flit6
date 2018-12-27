@@ -7,8 +7,9 @@ cross-compat libs might still want to use flit's packaging for the simplicity. A
 ``flit whatever else`` working as usual on Python 3.
 
 I did not port any of ``flit`` itself. This project merely subprocesses a Python 3
-build of your distribution, and then installs the generated release in the Python 2
-environment. That requires flit_ to exist in the ``python3`` runtime, for build.
+build of your project, and then installs the generated distribution into the Python 2
+environment. That requires flit_ to exist in the ``python3`` runtime, for build. An
+example of how to set it up the yaml for travis-ci can be seen here_.
 
 
 dev
@@ -26,3 +27,4 @@ To generate a release, use ``python setup.py bdist_wheel --universal``. Upload w
 
 .. _flit: https://flit.readthedocs.io/en/latest/
 .. _twine: https://twine.readthedocs.io/en/latest/
+.. _here: https://github.com/wimglenn/pytest-raisin/blob/432b55c838a10b2c885b3f33efdaee39df18504c/.travis.yml#L22-L24
