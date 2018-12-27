@@ -2,7 +2,7 @@ flit6
 =====
 
 Cross-compat ``flit install``. Flit doesn't support Python 2 at all, but authors of
-cross-compat libs might still want to use flit's packaging for the simplicity. After
+cross-compat libs might still want to use flit's packaging_ for the simplicity. After
 ``pip install flit6`` you can use ``flit install`` on Python 2 in your CI, with
 ``flit whatever else`` working as usual on Python 3.
 
@@ -26,5 +26,6 @@ To generate a release, use ``python setup.py bdist_wheel --universal``. Upload w
 
 
 .. _flit: https://flit.readthedocs.io/en/latest/
+.. _packaging: https://flit.readthedocs.io/en/latest/pyproject_toml.html
 .. _twine: https://twine.readthedocs.io/en/latest/
 .. _here: https://github.com/wimglenn/pytest-raisin/blob/432b55c838a10b2c885b3f33efdaee39df18504c/.travis.yml#L22-L24
